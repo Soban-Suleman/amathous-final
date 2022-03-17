@@ -7,8 +7,7 @@
     "start": "nodemon dist/App.js",
     "dev": "nodemon --exec babel-node src/App.js",
     "build": "babel src -d dist --source-maps inline --copy-files && npm run copy-config ",
-    "copy-config": "node copyDbConfig.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+    "copy-config": "node copyDbConfig.js"
   },
   "keywords": [],
   "author": "WebWrite",
